@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+sudo pacman -S --noconfirm --needed gimp tldr fzf rofi-wayland
+sudo pacman -S ttf-font-awesome waybar ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
+sudo pacman -S hyprlock --noconfirm --needed
+sudo pacman -S ghostty
+sudo pacman -S hyprpaper
+paru -Syu wlogout-git --noconfirm --needed
