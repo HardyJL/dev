@@ -35,7 +35,7 @@ update_files() {
 
             log "    copying env: cp $c $2"
             if [[ $dry_run == "0" ]]; then
-                cp -r $c $2
+                cp -r ./$c $2
             fi
         done
     )
