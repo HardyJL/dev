@@ -8,11 +8,6 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
     XDG_CONFIG_HOME=$HOME/.config
 fi
 
-if [ -z "$DEV_ENV" ]; then
-    echo "env var DEV_ENV needs to be present"
-    exit 1
-fi
-
 if [[ $1 == "--dry" ]]; then
     dry_run="1"
 fi
@@ -24,8 +19,6 @@ log() {
         echo "$1"
     fi
 }
-
-log "env: $DEV_ENV"
 
 update_files() {
     log "copying over files from: $1"
@@ -42,7 +35,7 @@ update_files() {
 
             log "    copying env: cp $c $2"
             if [[ $dry_run == "0" ]]; then
-                cp -r ./$c $2
+                cp -r $c $2
             fi
         done
     )
@@ -61,11 +54,11 @@ copy() {
 }
 
 # Update configuration files
-update_files $DEV_ENV/.config $XDG_CONFIG_HOME
+update_files .config $XDG_CONFIG_HOME
 
 # Copy zsh configuration
-copy $DEV_ENV/.zshrc $HOME/.zshrc
-copy $DEV_ENV/.zsh_history $HOME/.zsh_history
+copy .zshrc $HOME/.zshrc
+copy .zsh_history $HOME/.zsh_history
 
 # Reload Hyprland if it's running
 if command -v hyprctl &> /dev/null; then
