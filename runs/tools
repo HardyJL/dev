@@ -1,0 +1,3 @@
+pacman -S --noconfirm --needed spotify-launcher  
+paru -Sy zen-browser-bin
+sudo pacman -S --noconfirm --needed fastfetch pavucontrol
