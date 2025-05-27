@@ -4,3 +4,4 @@ pacman -S --noconfirm --needed spotify-launcher
 paru -Sy zen-browser-bin
 sudo pacman -S --noconfirm --needed fastfetch pavucontrol
 sudo pacman -S --noconfirm --needed openjdk-21-jre lua-language-server lazygit autopep8 pyright python-pip
+sudo pacman -S --noconfirm --needed wl-clipboard
