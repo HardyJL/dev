@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-ln -s $HOME/dev/.config/ghostty/ $HOME/.config/
-ln -s $HOME/dev/.config/tmux/ $HOME/.config/
-ln -s $HOME/dev/.config/nvim/ $HOME/.config/
-ln -s $HOME/dev/.config/.zshrc $HOME/
+sudo ln -sf $HOME/dev/dotfiles/ghostty/ $HOME/.config/
+sudo ln -sf $HOME/dev/dotfiles/tmux/ $HOME/.config/
+sudo ln -sf $HOME/dev/dotfiles/nvim/ $HOME/.config/
+sudo ln -sf $HOME/dev/dotfiles/.zshrc $HOME/
