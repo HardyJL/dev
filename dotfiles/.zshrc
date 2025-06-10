@@ -55,6 +55,10 @@ alias lg='lazygit'
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+bindkey -v
+bindkey ^R history-incremental-search-backward 
+bindkey ^S history-incremental-search-forward
+
 
 export PATH="$PATH:$HOME/src/flutter/bin"
 export PATH="$PATH:$HOME/src/lua_ls/bin"
