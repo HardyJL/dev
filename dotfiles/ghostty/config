@@ -4,3 +4,4 @@ background-opacity=0.9
 window-decoration=none
 background=#000000
 mouse-hide-while-typing=true
+confirm-close-surface=false
