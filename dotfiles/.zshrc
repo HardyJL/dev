@@ -91,6 +91,4 @@ zinit light Aloxaf/fzf-tab
 
 autoload -Uz compinit && compinit
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 export PATH="$PATH:/home/hannes/.lmstudio/bin"
