@@ -1,6 +1,6 @@
-font-size=16
+font-size=14
 maximize=true
-background-opacity=0.9
+background-opacity=0.75
 window-decoration=none
 background=#000000
 mouse-hide-while-typing=true
