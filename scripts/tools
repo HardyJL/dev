@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-paru -Sy brave-bin
 sudo pacman -S --noconfirm --needed fastfetch 
 sudo pacman -S --noconfirm --needed lua-language-server  
 sudo pacman -S ghostty --noconfirm --needed

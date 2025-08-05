@@ -64,7 +64,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "nospacing": 1,
-    "on-click": "ghostty --class=Impala -e impala"
+    "on-click": "nm-applet",
   },
   "battery": {
     "format": "{capacity}% {icon}",

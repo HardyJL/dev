@@ -3,4 +3,3 @@
 sudo pacman -S ttf-font-awesome waybar ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols --noconfirm --needed
 sudo pacman -S hyprlock --noconfirm --needed
 sudo pacman -S hyprpaper pavucontrol --noconfirm --needed
-paru -Syu wlogout-git --noconfirm --needed
