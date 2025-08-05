@@ -68,6 +68,7 @@ export PATH="$PATH":"$HOME/.dotnet/tools"
 export PATH="$PATH":"$HOME/src/luals/bin"
 export VISUAL="/usr/local/bin/nvim"
 export EDITOR="/usr/local/bin/nvim"
+export CHROME_EXECUTABLE="/usr/bin/chromium"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
