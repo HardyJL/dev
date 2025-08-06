@@ -27,10 +27,10 @@
   min-width: 9px;
 }
 
+#battery,
 #tray,
 #cpu,
-#battery,
-#battery#bat1,
+#backlight,
 #network,
 #clock,
 #pulseaudio,
@@ -46,3 +46,4 @@
 tooltip {
   padding: 2px;
 }
+

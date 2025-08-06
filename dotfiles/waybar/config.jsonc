@@ -18,9 +18,15 @@
     "network",
     "pulseaudio",
     "cpu",
+    "backlight",
     "battery",
   ],
 
+  "backlight": {
+	"device": "intel_backlight",
+	"format": "{icon}",
+	"format-icons": ["󰃞", "󰃟", "󰃠"]
+  },
 
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -68,7 +74,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "nospacing": 1,
-    "on-click": "nm-applet",
+    "on-click": "nm-connection-editor",
   },
   
  "battery": {
@@ -78,34 +84,22 @@
           "warning": 30,
           "critical": 15
       },
-      "format": "{icon}   {capacity}%",
+      "format": "{capacity}%  {icon}",
       "format-icons": ["", "", "", "", ""],
       "max-length": 25
   },
 
   "bluetooth": {
-    "format": "",
+    "format": " ",
     "format-disabled": "󰂲",
-    "format-connected": "",
+    "format-connected": " ",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "blueberry"
   },
   
   "pulseaudio": {
-      "format": " {icon} {volume}%",
-      "format-bluetooth": "{volume}%  {icon}",
-      "format-bluetooth-muted": " {icon}",
-      "format-muted": "0% {icon} ",
-      "format-source-muted": "",
-      "format-icons": {
-          "headphone": "",
-          "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "portable": "",
-          "car": "",
-          "default": ["", "", "", ""]
-      },
+      "format": " {icon}    {volume}%",
+      "format-icons": ["", "", ""],
       "on-click": "pavucontrol"
   },
 
@@ -120,6 +114,7 @@
     "tray"
     ]
   },
+
 
   "custom/expand-icon": {
     "format": " ",
