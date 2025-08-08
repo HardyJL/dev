@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
 sudo pacman -S ttf-font-awesome waybar ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols --noconfirm --needed
-sudo pacman -S hyprlock --noconfirm --needed
-sudo pacman -S hyprpaper pavucontrol --noconfirm --needed
+sudo pacman -S --noconfirm --needed blueberry brightnessctl btop chromium clang cmake code fastfetch firefox fzf git hyprlock hypridle hyprpaper hyprpolkitagent kvantum lua-language-server make man-db mesa-utils nautilus network-manager-applet networkmanager ninja nm-connection-editor nodejs npm obsidian pavucontrol pipewire playerctl qt5-wayland qt6-wayland ripgrep rust spotify-launcher thunderbird tldr tmux unzip waybar wine-staging wofi
+
+sudo pacman -S hyprshot --noconfirm --needed
