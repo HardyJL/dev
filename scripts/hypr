@@ -1,6 +1,16 @@
 #!/usr/bin/bash
 
+# Fonts
 sudo pacman -S ttf-font-awesome waybar ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols --noconfirm --needed
-sudo pacman -S --noconfirm --needed blueberry brightnessctl btop chromium clang cmake code fastfetch firefox fzf git hyprlock hypridle hyprpaper hyprpolkitagent kvantum lua-language-server make man-db mesa-utils nautilus network-manager-applet networkmanager ninja nm-connection-editor nodejs npm obsidian pavucontrol pipewire playerctl qt5-wayland qt6-wayland ripgrep rust spotify-launcher thunderbird tldr tmux unzip waybar wine-staging wofi
 
-sudo pacman -S hyprshot --noconfirm --needed
+# Desktop
+sudo pacman -S obsidian nautilus code fastfetch firefox spotify-launcher thunderbird wine-staging chromium --noconfirm --needed
+
+# Hypr
+sudo pacman -S hyprshot hyprlock hypridle hyprpaper hyprpolkitagent kvantum mesa-utils qt5-wayland qt6-wayland waybar wofi --noconfirm --needed
+
+# Controls
+sudo pacman -S batsignal power-profiles-deamon blueberry brightnessctl btop playerctl network-manager-applet networkmanager nm-connection-editor pavucontrol pipewire --noconfirm --needed
+
+# Tools
+sudo pacman -S clang cmake ripgrep rust fzf git unzip ninja make man-db lua-language-server nodejs npm tldr tmux --noconfirm --needed

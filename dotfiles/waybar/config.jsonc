@@ -19,6 +19,7 @@
     "pulseaudio",
     "cpu",
     "backlight",
+    "power-profiles-daemon",
     "battery",
   ],
 
@@ -87,6 +88,18 @@
       "format": "{capacity}%  {icon}",
       "format-icons": ["", "", "", "", ""],
       "max-length": 25
+  },
+
+  "power-profiles-daemon": {
+    "format": " {icon} ",
+    "tooltip-format": "Power profile: {profile}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
   },
 
   "bluetooth": {
