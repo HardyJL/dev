@@ -1,0 +1,77 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Disable Vim's Ctrl+P handling in specific modes
+    {
+        "key": "ctrl+p",
+        "command": "-extension.vim_ctrl+p",
+        "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    },
+    // Navigate up in Quick Open (Command Palette or file picker)
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    // Navigate down in Quick Open
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    // Disable Vim cursorUp in Quick Open
+    {
+        "key": "ctrl+p",
+        "command": "-cursorUp",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && inQuickOpen"
+    },
+    // Disable Vim cursorDown in Quick Open
+    {
+        "key": "ctrl+n",
+        "command": "-cursorDown",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && inQuickOpen"
+    },
+    // Navigate up in autocomplete suggestions
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible && editorTextFocus && vim.active && vim.mode == 'Insert'"
+    },
+    // Navigate down in autocomplete suggestions
+    {
+        "key": "ctrl+n",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible && editorTextFocus && vim.active && vim.mode == 'Insert'"
+    },
+    // Prevent Ctrl+P from opening Quick Open when suggest widget is visible
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen",
+        "when": "suggestWidgetVisible && editorTextFocus && vim.active && vim.mode == 'Insert'"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-workbench.action.chat.applyInEditor",
+        "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "acceptSelectedCodeAction",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+   
+]
