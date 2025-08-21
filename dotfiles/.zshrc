@@ -63,6 +63,7 @@ bindkey ^S history-incremental-search-forward
 
 export PATH="$PATH:$HOME/src/flutter/bin"
 export PATH="$PATH:$HOME/src/lua_ls/bin"
+export PATH="$PATH:$HOME/src/code/bin"
 export PATH="$PATH:$HOME/src/android-studio/bin/"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH":"$HOME/.dotnet/tools"
