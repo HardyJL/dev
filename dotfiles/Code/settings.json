@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "Best Themes - Tomorrow Night Minimal",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.lineHeight": 24,
     "editor.letterSpacing": 0.5,
     "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
@@ -20,14 +20,14 @@
     "FSharp.unnecessaryParenthesesAnalyzer": false,
     "explorer.confirmDelete": false,
     "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
+        "*": true,
+        "plaintext": true,
         "markdown": false,
         "scminput": false,
         "python": true,
         "fsharp": true
     },
-    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8",
     },
@@ -78,5 +78,10 @@
     },
     "editor.detectIndentation": false,
     "terminal.integrated.tabs.enabled": false,
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "extensions.ignoreRecommendations": true,
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
 }
