@@ -62,6 +62,9 @@ bindkey ^S history-incremental-search-forward
 
 
 export PATH="$PATH:$HOME/src/flutter/bin"
+export PATH="$PATH:$HOME/.local/bin/env"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/src/camunda/2-camunda-modeler"
 export PATH="$PATH:$HOME/src/lua_ls/bin"
 export PATH="$PATH:$HOME/src/code/bin"
 export PATH="$PATH:$HOME/src/android-studio/bin/"
@@ -71,6 +74,7 @@ export PATH="$PATH":"$HOME/src/luals/bin"
 export VISUAL="/usr/local/bin/nvim"
 export EDITOR="/usr/bin/nvim"
 export CHROME_EXECUTABLE="/usr/bin/chromium"
+export JAVA_HOME="/usr/lib/jvm/default-runtime"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -95,3 +99,5 @@ zinit light Aloxaf/fzf-tab
 autoload -Uz compinit && compinit
 
 export PATH="$PATH:/home/hannes/.lmstudio/bin"
+
+. "$HOME/.local/bin/env"

@@ -7,4 +7,5 @@ sudo ln -sf $HOME/dev/dotfiles/wofi/ $HOME/.config/
 sudo rm -rf $HOME/.config/hypr/
 sudo ln -sf $HOME/dev/dotfiles/hypr/ $HOME/.config/
 sudo ln -sf $HOME/dev/dotfiles/waybar/ $HOME/.config/
+sudo ln -sf $HOME/dev/dotfiles/kanata/ $HOME/.config/
 sudo ln -sf $HOME/dev/dotfiles/.zshrc $HOME/
