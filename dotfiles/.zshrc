@@ -62,6 +62,7 @@ bindkey ^S history-incremental-search-forward
 
 
 export PATH="$PATH:$HOME/src/flutter/bin"
+export PATH="$PATH:$HOME/src/vial"
 export PATH="$PATH:$HOME/.local/bin/env"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/src/camunda/2-camunda-modeler"
