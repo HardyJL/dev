@@ -1,10 +1,13 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 sudo ln -sf $HOME/dev/dotfiles/ghostty/ $HOME/.config/
 sudo ln -sf $HOME/dev/dotfiles/tmux/ $HOME/.config/
 sudo ln -sf $HOME/dev/dotfiles/nvim/ $HOME/.config/
 sudo ln -sf $HOME/dev/dotfiles/wofi/ $HOME/.config/
-sudo ln -sf $HOME/dev/dotfiles/hypr/ $HOME/.config/
-sudo ln -sf $HOME/dev/dotfiles/waybar/ $HOME/.config/
-sudo ln -sf $HOME/dev/dotfiles/kanata/ $HOME/.config/
 sudo ln -sf $HOME/dev/dotfiles/.zshrc $HOME/
+
+# Check if we have hyprland installed
+if [ -d "/usr/share/hyprland" ]; then
+    sudo ln -sf $HOME/dev/dotfiles/hypr/ $HOME/.config/
+    sudo ln -sf $HOME/dev/dotfiles/waybar/ $HOME/.config/
+fi

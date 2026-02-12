@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 MONITOR="eDP-1"
 ENABLE_ARGS="highres,0x0,1.2"

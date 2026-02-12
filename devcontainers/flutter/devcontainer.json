@@ -1,0 +1,6 @@
+{
+  "name": "Flutter",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "flutter",
+  "postCreateCommand": "git clone https://github.com/HardyJL/dev ~/dev && cd ~/dev/scripts/ && ./link"
+}

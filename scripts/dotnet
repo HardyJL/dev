@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-
-sudo pacman -S dotnet-sdk dotnet-runtime --needed --noconfirm
