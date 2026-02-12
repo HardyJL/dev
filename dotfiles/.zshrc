@@ -37,12 +37,13 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias ll='ls -alF'
+alias ll='ls -AlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias cls='clear'
 alias ..='cd ..'
 alias vim='nvim'
+alias v='nvim'
 alias tmk='tmux kill-session'
 alias sleep="systemctl suspend"
 alias gst='git status'
@@ -52,6 +53,12 @@ alias gp='git push'
 alias glg='git log --graph --oneline'
 alias lg='lazygit'
 alias gdev='git add . && git commit -m "dev commit" && git push'
+alias tma='tmux attach'
+alias get_idf='. $HOME/src/esp/esp-idf/export.sh'
+
+gacm () {
+	git commit -am "$*"
+}
 
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -68,14 +75,18 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/src/camunda/2-camunda-modeler"
 export PATH="$PATH:$HOME/src/lua_ls/bin"
 export PATH="$PATH:$HOME/src/code/bin"
-export PATH="$PATH:$HOME/src/android-studio/bin/"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH":"$HOME/.dotnet/tools"
 export PATH="$PATH":"$HOME/src/luals/bin"
+export PATH="$PATH":"$HOME/.npm-global/bin"
+export ANDROID_HOME=$HOME/Android/Sdk
 export VISUAL="/usr/local/bin/nvim"
-export EDITOR="/usr/bin/nvim"
+export EDITOR="/usr/local/bin/nvim"
 export CHROME_EXECUTABLE="/usr/bin/chromium"
 export JAVA_HOME="/usr/lib/jvm/default-runtime"
+export PATH="$PATH:$HOME/src/android-studio/bin/"
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -99,6 +110,6 @@ zinit light Aloxaf/fzf-tab
 
 autoload -Uz compinit && compinit
 
-export PATH="$PATH:/home/hannes/.lmstudio/bin"
+
 
 . "$HOME/.local/bin/env"

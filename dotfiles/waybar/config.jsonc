@@ -19,8 +19,8 @@
     "pulseaudio",
     "cpu",
     "backlight",
-    "power-profiles-daemon",
-    "battery",
+	"power-profiles-daemon",
+    "battery"
   ],
 
   "backlight": {
