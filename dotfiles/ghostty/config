@@ -1,5 +1,5 @@
 font-size=14
-maximize=true
+# maximize=true
 background-opacity=0.65
 window-decoration=none
 background=#000000
