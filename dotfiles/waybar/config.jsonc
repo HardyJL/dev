@@ -59,9 +59,10 @@
     "on-click": "ghostty -e btop"
   },
   "clock": {
+	"locale": "da_DK.utf8",
     "format": "{:%A %H:%M}",
-    "format-alt": "{:%d %B W%V %Y}",
-    "tooltip": false,
+	"format-alt": "{:%A d. %d. %B %Y}",
+    "tooltip": false
   },
 
   "network": {
@@ -75,7 +76,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "nospacing": 1,
-    "on-click": "nm-connection-editor",
+    "on-click": "nm-connection-editor"
   },
   
  "battery": {

@@ -55,6 +55,7 @@ alias lg='lazygit'
 alias gdev='git add . && git commit -m "dev commit" && git push'
 alias tma='tmux attach'
 alias get_idf='. $HOME/src/esp/esp-idf/export.sh'
+alias docker='podman'
 
 gacm () {
 	git commit -am "$*"

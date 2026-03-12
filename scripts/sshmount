@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo "Mounting home directory"
-sshfs s250242@login.hpc.dtu.dk:/zhome/24/a/219336 ~/work/dtu/hpc
+sshfs s250242@login.hpc.dtu.dk:/zhome/24/a/219336 ~/work/dtu/hpc/shome
