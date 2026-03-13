@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+# Check if directory argument is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <directory>"
+    exit 1
+fi
+ 
+# Get the full path of the directory
+DIR=$(cd "$1" && pwd)
+ 
+# Check if directory exists
+if [ ! -d "$DIR" ]; then
+    echo "Error: Directory '$1' does not exist"
+    exit 1
+fi
+ 
+# Extract the folder name (last directory in path)
+SESSION_NAME=$(basename "$DIR")
+ 
+# Check if session already exists
+tmux has-session -t "$SESSION_NAME" 2>/dev/null
+ 
+if [ $? == 0 ]; then
+    echo "Session '$SESSION_NAME' already exists. Attaching..."
+    tmux attach -t "$SESSION_NAME"
+    exit 0
+fi
+ 
+# Create new session with first window
+tmux new-session -d -s "$SESSION_NAME" -c "$DIR"
+ 
+# Create second window
+tmux new-window -t "$SESSION_NAME:2" -c "$DIR"
+ 
+# Create third window
+tmux new-window -t "$SESSION_NAME:3" -c "$DIR"
+ 
+# Return to first window and open vim
+tmux select-window -t "$SESSION_NAME:1"
+tmux send-keys -t "$SESSION_NAME:1" "vim" C-m
+ 
+# Attach to the session
+tmux attach -t "$SESSION_NAME"
+
