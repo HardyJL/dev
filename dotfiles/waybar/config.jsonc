@@ -17,7 +17,6 @@
     "bluetooth",
     "network",
     "pulseaudio",
-    "cpu",
     "backlight",
 	"power-profiles-daemon",
     "battery"
@@ -25,7 +24,7 @@
 
   "backlight": {
 	"device": "intel_backlight",
-	"format": "{icon}",
+	"format": "<span size='130%'>{icon}</span>",
 	"format-icons": ["󰃞", "󰃟", "󰃠"]
   },
 
@@ -67,10 +66,10 @@
 
   "network": {
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
-    "format" : "{icon}",
-    "format-wifi" : "{icon}",
-    "format-ethernet" : "󰀂",
-    "format-disconnected" : "󰖪",
+    "format" : "<span size='130%'>{icon}</span>",
+    "format-wifi" : "<span size='130%'>{icon}</span>",
+    "format-ethernet" : "<span size='130%'>󰀂</span>",
+    "format-disconnected" : "<span size='130%'>󰖪</span>",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
@@ -86,13 +85,15 @@
           "warning": 30,
           "critical": 15
       },
-      "format": "{capacity}%  {icon}",
+      "format": "<span size='130%'>{icon}</span>  {capacity}%",
+      "format-charging": "<span size='130%'>{icon} </span>  {capacity}%",
+      "format-plugged": "<span size='130%'>{icon} </span>  {capacity}%",
       "format-icons": ["", "", "", "", ""],
       "max-length": 25
   },
 
   "power-profiles-daemon": {
-    "format": " {icon} ",
+    "format": " <span size='130%'>{icon}</span> ",
     "tooltip-format": "Power profile: {profile}",
     "tooltip": true,
     "format-icons": {
@@ -104,15 +105,15 @@
   },
 
   "bluetooth": {
-    "format": " ",
-    "format-disabled": "󰂲",
-    "format-connected": " ",
+    "format": "<span size='130%'></span> ",
+    "format-disabled": "<span size='130%'>󰂲</span>",
+    "format-connected": "<span size='130%'></span> ",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "blueberry"
   },
   
   "pulseaudio": {
-      "format": " {icon}    {volume}%",
+      "format": "<span size='130%'>{icon}</span>  {volume}%",
       "format-icons": ["", "", ""],
       "on-click": "pavucontrol"
   },
@@ -131,7 +132,7 @@
 
 
   "custom/expand-icon": {
-    "format": " ",
+    "format": "<span size='130%'></span> ",
     "tooltip": false
   },
   "tray": {

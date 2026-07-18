@@ -37,7 +37,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias ll='ls -AlF'
+alias ll='ls -lAhF'
 alias la='ls -A'
 alias l='ls -CF'
 alias cls='clear'
@@ -53,12 +53,25 @@ alias gp='git push'
 alias glg='git log --graph --oneline'
 alias lg='lazygit'
 alias gdev='git add . && git commit -m "dev commit" && git push'
-alias tma='tmux attach'
-alias get_idf='. $HOME/src/esp/esp-idf/export.sh'
-alias docker='podman'
+alias tma='$HOME/dev/scripts/tmux-attach'
+alias tmd='tmux detach'
+alias val='~/vexplore/valuta-rs/target/release/valuta-rs --amount'
+
+alias cr='cargo run'
+alias crq='cargo run -q'
+alias crr='cargo run --release'
+alias crrq='cargo run --release -q'
+alias cb='cargo build'
+alias cbr='cargo build --release'
+
 
 gacm () {
 	git commit -am "$*"
+}
+
+cll() {
+  local sep="$1"
+  column -t -s"$sep" -o" $sep "
 }
 
 
@@ -114,3 +127,12 @@ autoload -Uz compinit && compinit
 
 
 . "$HOME/.local/bin/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/hannes/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/hannes/.local/bin:$PATH"
